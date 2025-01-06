@@ -1,0 +1,80 @@
+.header_wrapper{
+    background-color: #A5862E;
+    
+}
+.header-row{
+    padding:25px 0px;
+}
+.nav-items-wrapper ul  li{
+list-style-type: none;
+padding: 0px 10px;
+color: white;
+}
+.nav-items-wrapper ul  li a{
+    text-decoration: none;
+color: white;
+    
+}
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Button */
+  .dropdown-button {
+    background-color: #A5862E;
+    color: white;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    border-radius: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+  }
+  
+  /* .dropdown-button:hover {
+    background-color: #0056b3;
+  } */
+  
+  /* Dropdown Content */
+  .dropdown-content {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 5px);
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    z-index: 1000;
+  }
+  
+  /* Open State */
+  .dropdown-content.open {
+    opacity: 1;
+    max-height: 150px; /* Adjust height based on the content */
+  }
+  
+  /* Dropdown Items */
+  .dropdown-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown-content li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .dropdown-content li:hover {
+    background-color: #f0f0f0;
+  }
+  
