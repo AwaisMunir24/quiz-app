@@ -1,0 +1,34 @@
+.pillars_wrapper {
+  background-color: #bca664;
+  padding: 50px 0px;
+}
+.pillars_wrapper h4 {
+  font-family: "Roboto Slab", serif;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+.pillar_icon_wrapper {
+  background-color: #a38429;
+  width: 125px;
+  height: 125px;
+  border-radius: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pillar_name {
+  font-family: "Poppins", serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 10px;
+}
+.pillar_in_urdu {
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  color: #fff;
+}
+.pillar_icons_row {
+  margin-top: 30px;
+}

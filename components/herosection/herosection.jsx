@@ -7,7 +7,7 @@ import { FaApple  } from "react-icons/fa";
 const Herosection = () => {
   return (
     <section className='main_hero_wrapper'> 
-    <div className='container-fluid'>
+    <div className='container-xxl'>
       <div className='row align-items-center'>
        
         <div className='col-lg-7'>
