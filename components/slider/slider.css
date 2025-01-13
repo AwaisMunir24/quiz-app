@@ -1,0 +1,67 @@
+.wrapper_slider_image {
+  background: white;
+  border: 1px solid white;
+  max-width: 95%;
+}
+.slider-wrapper {
+  background-color: #bca664;
+  margin-bottom: 50px;
+  padding: 75px 0px;
+}
+.content-wrapper {
+  background: #bca664;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content-wrapper h4 {
+  padding-top: 20px;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+.content-wrapper p {
+  font-family: "Poppins", serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  padding: 8px 20px;
+}
+.content-wrapper button {
+  color: #bca664;
+  font-family: "Poppins", serif;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: white;
+  border: none;
+  padding: 8px 30px;
+
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-dots {
+  bottom: -50px; /* Adjust position of dots if needed */
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: gray; /* Unactive dot color */
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white; /* Active dot color */
+}
+
+/* Remove arrows */
+.slick-arrow {
+  display: none !important;
+}

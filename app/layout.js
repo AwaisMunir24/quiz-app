@@ -3,6 +3,8 @@ import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "@/layout/header/header";
 import Footer from "@/layout/footer/footer";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

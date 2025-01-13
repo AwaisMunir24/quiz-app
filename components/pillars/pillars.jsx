@@ -33,7 +33,7 @@ const Pillars = () => {
   console.log(pillarsData);
   return (
     <section className="pillars_wrapper">
-      <div className="container-fluid">
+      <div className="container-xxl">
         <div className="row">
           <div className=" text-center col-lg-12 ">
             <h4>Pillars Of Islam</h4>
