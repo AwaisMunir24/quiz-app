@@ -1,181 +1,253 @@
-.header_wrapper{
-  
-    transition: all 0.3s ease; /* Smooth animation for sticky effect */
-    box-shadow: none;
-    position: relative;
-    z-index: 1000;
-   
+.header_wrapper {
+  transition: all 0.3s ease; /* Smooth animation for sticky effect */
+  box-shadow: none;
+  position: relative;
+  z-index: 1000;
 }
-.header-row{
-  padding:25px 0px;
+.header-row {
+  padding: 25px 0px;
 }
-.nav-items-wrapper ul  li{
-list-style-type: none;
-padding: 0px 10px;
-color: white;
-margin-right: 10px;
+.nav-items-wrapper ul li {
+  list-style-type: none;
+  padding: 0px 10px;
+  color: white;
+  margin-right: 10px;
 }
-.nav-items-wrapper ul  li a{
-font-family: "Poppins", serif;
-font-size: 14px;
+.nav-items-wrapper ul li a {
+  font-family: "Poppins", serif;
+  font-size: 14px;
   text-decoration: none;
   color: white;
-    
 }
 /* Dropdown Container */
 .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Button */
-  .dropdown-button {
-    font-family: "Poppins", serif;
-    background-color: #A5862E;
-    color: white;
-    border: 1px solid #fff;
-    padding: 10px 15px;
-    border-radius: 2px;
-    font-size: 14px;
-    cursor: pointer;
-    outline: none;
-    transition: background-color 0.3s;
-    display: flex;
-    align-items: center;
-  }
-  
-  /* .dropdown-button:hover {
+  position: relative;
+  display: inline-block;
+}
+
+/* Button */
+.dropdown-button {
+  font-family: "Poppins", serif;
+  background-color: #a5862e;
+  color: white;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+/* .dropdown-button:hover {
     background-color: #0056b3;
   } */
-  
-  /* Dropdown Content */
-  .dropdown-content {
-    font-family: "Poppins", serif;
-    position: absolute;
-    right: 0;
-    top: calc(100% + 5px);
-    width: 200px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+
+/* Dropdown Content */
+.dropdown-content {
+  font-family: "Poppins", serif;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 5px);
+  width: 200px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  z-index: 1000;
+}
+
+/* Open State */
+.dropdown-content.open {
+  opacity: 1;
+  max-height: 150px; /* Adjust height based on the content */
+}
+
+/* Dropdown Items */
+.dropdown-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-content li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: "Poppins", serif;
+  font-size: 14px;
+}
+
+.dropdown-content li:hover {
+  background-color: #f0f0f0;
+}
+.langauge_icon {
+  margin-left: 6px;
+}
+
+.header_wrapper {
+  /* background-color: #fff; */
+  /* padding: 20px 0; */
+}
+
+.header_wrapper.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for sticky effect */
+  animation: slide-down 0.3s ease; /* Smooth slide animation */
+  background-color: #a38429;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Dropdown styles (unchanged) */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.dropdown-content.open {
+  display: block;
+}
+
+.dropdown-content ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.dropdown-content li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-content li:hover {
+  background-color: #f5f5f5;
+}
+.small_row {
+  padding: 15px 0px;
+}
+.mobile_items_icon {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  /* Sidebar styling */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #a38429; /* Adjust as needed */
+    color: #fff;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+    transform: translateX(-100%); /* Hidden off-screen */
+    left: 0; /* Sidebar starts from the left */
   }
-  
-  /* Open State */
-  .dropdown-content.open {
-    opacity: 1;
-    max-height: 150px; /* Adjust height based on the content */
+
+  /* Sidebar open state */
+  .sidebar.open {
+    transform: translateX(0); /* Bring sidebar into view */
   }
-  
-  /* Dropdown Items */
-  .dropdown-content ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .dropdown-content li {
-    padding: 10px;
+
+  /* Close icon styling */
+  .close-sidebar {
+    background: none;
+    border: none;
+    color: #fff;
+    align-self: flex-end;
     cursor: pointer;
-    transition: background-color 0.2s;
-    font-family: "Poppins", serif;
-    font-size: 14px;
-
-  }
-  
-  .dropdown-content li:hover {
-    background-color: #f0f0f0;
-  }
-  .langauge_icon{
-    margin-left: 6px;
+    font-size: 20px;
   }
 
-
-  .header_wrapper {
-    /* background-color: #fff; */
-    /* padding: 20px 0; */
-   
+  /* Sidebar menu */
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
   }
-  
-  .header_wrapper.sticky {
+
+  .sidebar-menu li {
+    margin-bottom: 15px;
+  }
+
+  .sidebar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .sidebar-menu li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Overlay styling */
+  .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for sticky effect */
-    animation: slide-down 0.3s ease; /* Smooth slide animation */
-    background-color: #A38429;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 999; /* Just below the sidebar */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out; /* Smooth overlay fade */
   }
-  
-  @keyframes slide-down {
-    from {
-      transform: translateY(-100%);
-    }
-    to {
-      transform: translateY(0);
-    }
-  }
-  
-  /* Dropdown styles (unchanged) */
 
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-top: 5px;
-    overflow: hidden;
+  /* Overlay visible state */
+  .overlay.open {
+    opacity: 1;
+    visibility: visible;
   }
-  
-  .dropdown-content.open {
+
+  .web_items {
+    display: none !important;
+  }
+  .mobile_items_icon {
     display: block;
   }
-  
-  .dropdown-content ul {
-    list-style: none;
-    padding: 10px;
-    margin: 0;
+  .bars_menu_icon {
+    border: none;
+    background-color: transparent;
   }
-  
-  .dropdown-content li {
-    padding: 8px 12px;
-    cursor: pointer;
+  .header-row {
+    padding: 20px 0px;
   }
-  
-  .dropdown-content li:hover {
-    background-color: #f5f5f5;
+}
+@media screen and (max-width: 576px) {
+  .logo_header_area,
+  .mobile_items_icon {
+    width: 50% !important;
   }
-  .small_row{
-    padding:15px 0px;
+  .header-row {
+    padding: 10px 0px;
   }
-  .mobile_items_icon{
-    display: none;
+  .sidebar {
+    width: 250px;
   }
-  @media screen and (max-width:768px){
-    .web_items{
-      display: none !important;
-    }
-    .mobile_items_icon{
-      display: block;
-    }
-    .bars_menu_icon{
-      border: none;
-      background-color: transparent;
-
-    }
-    .header-row{
-      padding:20px 0px;
-    }
-  }
-  @media screen and (max-width:576px){
-    .logo_header_area ,.mobile_items_icon{
-      width: 50% !important;
-    }
-  }
+}

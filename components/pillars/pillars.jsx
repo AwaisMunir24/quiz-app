@@ -40,7 +40,7 @@ const Pillars = () => {
           </div>
         </div>
 
-        <div className="row justify-content-around pillar_icons_row">
+        <div className="row justify-content-around pillar_icons_row website_padding-global">
           {pillarsData.map((e, idx) => (
             <div className="col-lg-2 text-center" key={idx}>
               <div className="d-flex align-items-center flex-column">

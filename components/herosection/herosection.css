@@ -1,9 +1,9 @@
 .main_hero_wrapper {
   position: relative;
   background-color: #a38429;
-  margin-top: -100px;
-  padding-top: 200px;
-  padding-bottom: 150px;
+  margin-top: -220px;
+  padding-top: 250px;
+  padding-bottom: 170px;
   border-radius: 0 0 50px 50px;
   margin-bottom: 50px;
   overflow: hidden;
@@ -69,4 +69,32 @@
 }
 .button_wrapper {
   margin-top: 60px;
+}
+@media screen and (max-width: 1280px) {
+  .main_hero_wrapper {
+    padding-top: 200px;
+    padding-bottom: 120px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .heading_hero {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main_hero_wrapper {
+    padding-top: 260px;
+    padding-bottom: 80px;
+  }
+  .heading_hero {
+    font-size: 40px;
+  }
+  .right_side_hero_image {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main_hero_wrapper {
+    margin-bottom: 25px;
+  }
 }

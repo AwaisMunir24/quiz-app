@@ -1,69 +1,78 @@
-.form_wrapper{
-    background-color: #A38429;
-    padding:30px 30px;
-    position: relative;
-    top: 50px;
+.form_wrapper {
+  background-color: #a38429;
+  padding: 30px 30px;
+  position: relative;
+  top: 50px;
 }
-.contact-us-heading{
-    font-family: "Poppins", serif;
-    font-size: 24px;
-    font-weight: 600;
+.contact-us-heading {
+  font-family: "Poppins", serif;
+  font-size: 24px;
+  font-weight: 600;
 }
 .form_wrapper input {
-    font-family: "Poppins", serif;
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    border-radius: 2px;
-    color: #383838;
-    height: 50px;
+  font-family: "Poppins", serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  color: #383838;
+  height: 50px;
 }
-.form_wrapper input:focus , .form_wrapper textarea:focus{
-    box-shadow: none;
-    outline: 0;
+.form_wrapper input:focus,
+.form_wrapper textarea:focus {
+  box-shadow: none;
+  outline: 0;
 }
-.form_wrapper textarea{
-    font-family: "Poppins", serif;
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    border-radius: 2px;
-    color: #383838;  
-    padding-top: 10px;
+.form_wrapper textarea {
+  font-family: "Poppins", serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  color: #383838;
+  padding-top: 10px;
 }
-.contact_us_email_area p{
-margin-bottom: 0px;
-font-family: "Poppins", serif;
-font-size: 14px;
-
+.contact_us_email_area p {
+  margin-bottom: 0px;
+  font-family: "Poppins", serif;
+  font-size: 14px;
 }
-.contact_us_email_area .icon_areaa{
-    width: 30px;
-    height: 30px;
-    border: 1px solid #A38429;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 6px;
+.contact_us_email_area .icon_areaa {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #a38429;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
 }
-.phone_section{
-    margin-top: 20px;
+.phone_section {
+  margin-top: 20px;
 }
-.form_wrapper button{
-    background-color: #5E3023;
-    border-radius: 4px;
-    color: white;
-    font-family: "Poppins", serif;
-    font-size: 14px;
-    font-weight: 500;
-    border: none;
-    padding:15px 50px; 
-    margin-top:15px;
-
+.form_wrapper button {
+  background-color: #5e3023;
+  border-radius: 4px;
+  color: white;
+  font-family: "Poppins", serif;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  padding: 15px 50px;
+  margin-top: 15px;
 }
-.udpate_heading{
-    font-family: "Poppins", serif;
-    font-size: 14px;
-    font-weight: 500;
-    color: #383838;
+.udpate_heading {
+  font-family: "Poppins", serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #383838;
+}
+@media screen and (max-width: 992px) {
+  .form-wrapper-main {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .form-wrapper-main {
+    padding-top: 25px;
+  }
 }

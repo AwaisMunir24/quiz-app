@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <footer className="footer-wrapper">
       <div className="container-xxl">
-        <div className="row ">
-          <div className="col-lg-4 ">
+        <div className="row align-items-start">
+          <div className="col-lg-4 col-md-4 col-sm-12">
             <Image
               src={"/images/footerlogo.png"}
               alt=""
@@ -28,7 +28,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-4 col-sm-12 easy-access_wrapper">
             <h4>Easy Access</h4>
             <div className="main_row_margin">
               <ul className="footer_links">
@@ -44,7 +44,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-4 col-sm-12 contact-us-wrap">
             <h4>Contact Us</h4>
             <div className="main_row_margin">
               <div className="contact_us_area d-flex align-items-center ">

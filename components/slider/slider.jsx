@@ -44,7 +44,7 @@ const SliderComponent = () => {
   return (
     <section className="slider-wrapper">
       <div className="container-xxl">
-        <div className="row">
+        <div className="row website_padding-global">
           <div className="col-12">
             <div className="slider-container">
               <Slider {...settings}>

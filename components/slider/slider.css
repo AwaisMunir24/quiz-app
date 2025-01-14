@@ -65,3 +65,8 @@
 .slick-arrow {
   display: none !important;
 }
+@media screen and (max-width: 576px) {
+  .slider-wrapper {
+    margin-bottom: 25px;
+  }
+}

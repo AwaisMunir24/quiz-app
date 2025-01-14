@@ -1,0 +1,53 @@
+.mission-wrapper {
+  padding: 50px 0px;
+}
+.mission-heading-wrapper h5 {
+  font-family: "Poppins", serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #5e3023;
+}
+.mission-heading-wrapper p {
+  color: #7a7a7a;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.mission-heading-wrapper .listing-points li {
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+.second-para {
+  margin-top: 10px;
+}
+.first-para {
+  margin-top: 20px;
+}
+.img-wrapper_quran {
+  padding: 20px;
+  border: 2px solid #bca664;
+}
+@media screen and (max-width: 1280px) {
+  .mission-heading-wrapper h5 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mission-heading-wrapper h5 {
+    font-size: 30px;
+  }
+  .mission-wrapper {
+    padding: 0px 0px;
+    padding-bottom: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .mission-heading-wrapper p,
+  .mission-heading-wrapper .listing-points li {
+    font-size: 14px;
+  }
+}
